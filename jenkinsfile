@@ -1,0 +1,10 @@
+pipeline{
+	agent any
+	stages{
+		stage("Create Declarative Pipeline by checking out Github Repo and writing script in jenkins"){
+			steps{
+				git 'https://github.com/devsecops2020/HelloWorld.git' 
+			}
+		}
+	}
+}
